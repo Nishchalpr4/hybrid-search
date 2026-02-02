@@ -1,48 +1,27 @@
-# Hybrid Search: BM25 + Embeddings
+# Hybrid Search: Keywords + Meaning
 
-Search 5,000 books using **keywords** (BM25) AND **meaning** (embeddings) together.
+Search 5,000 books using both keywords AND semantic meaning.
 
 ## Quick Start
 
 ```bash
-# Install packages
 pip install -r requirements.txt
-
-# Run demo
 python quick_demo.py
 ```
 
-**Output:**
-```
-Query: "fantasy adventure magic"
-1. Practical Magic (0.993)
-2. Book of Nightmares (0.755)
-3. Magic Seeds (0.741)
-```
+## How It Works
 
-## What It Does
-
-- **BM25**: Fast keyword search (matches exact words)
-- **Embeddings**: Semantic search (understands meaning)
+- **BM25**: Keyword matching (fast)
+- **Embeddings**: Semantic search (understands meaning)  
 - **Hybrid**: Combines both for better results
 
-Result: 88% accuracy on test queries (vs 65% keywords alone)
+**Result:** 88% accuracy vs 65% keywords alone
 
 ## Files
 
-- `search_pipeline.py` – Core search engine
-- `quick_demo.py` – 4 example queries
-- `eval_demo.py` – Test results (88% precision)
-- `data_books.json` – 5,000 books dataset
-
-## Install & Run
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python quick_demo.py
-```
+- `search_simple.py` – Core engine (80 lines)
+- `quick_demo.py` – 4 demo queries
+- `data_books.json` – 5,000 books
 
 ## Architecture
 
