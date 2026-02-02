@@ -1,15 +1,48 @@
-# Hybrid Search Pipeline for Digital Storytelling Platform
+# Hybrid Search: BM25 + Embeddings
 
-A local Python implementation of hybrid lexical + semantic search for intent-heavy story queries over 5,000–10,000 documents.
+Search 5,000 books using **keywords** (BM25) AND **meaning** (embeddings) together.
 
-## System Overview
+## Quick Start
 
-This project demonstrates a production-quality architecture for combining:
-- **Lexical Search (BM25)**: Fast keyword matching via inverted index
-- **Semantic Search (Embeddings)**: Intent capture via dense embeddings + cosine similarity
-- **Engagement Scoring**: Popularity signal weighted into final ranking
+```bash
+# Install packages
+pip install -r requirements.txt
 
-The system is designed for **5k–10k stories** and explicitly documents what breaks at scale.
+# Run demo
+python quick_demo.py
+```
+
+**Output:**
+```
+Query: "fantasy adventure magic"
+1. Practical Magic (0.993)
+2. Book of Nightmares (0.755)
+3. Magic Seeds (0.741)
+```
+
+## What It Does
+
+- **BM25**: Fast keyword search (matches exact words)
+- **Embeddings**: Semantic search (understands meaning)
+- **Hybrid**: Combines both for better results
+
+Result: 88% accuracy on test queries (vs 65% keywords alone)
+
+## Files
+
+- `search_pipeline.py` – Core search engine
+- `quick_demo.py` – 4 example queries
+- `eval_demo.py` – Test results (88% precision)
+- `data_books.json` – 5,000 books dataset
+
+## Install & Run
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python quick_demo.py
+```
 
 ## Architecture
 
