@@ -1,0 +1,42 @@
+[
+  {
+    "query": "fantasy adventure magic",
+    "ground_truth": ["Practical Magic", "Fantasy", "Magic"]
+  },
+  {
+    "query": "romance love story relationship",
+    "ground_truth": ["Love", "Romance", "Heart", "Passion"]
+  },
+  {
+    "query": "mystery thriller suspense crime",
+    "ground_truth": ["Mystery", "Thriller", "Detective", "Crime"]
+  },
+  {
+    "query": "science fiction space futuristic",
+    "ground_truth": ["Science Fiction", "Space", "Future", "Cyberpunk"]
+  },
+  {
+    "query": "horror dark scary evil",
+    "ground_truth": ["Horror", "Dark", "Evil", "Scary"]
+  },
+  {
+    "query": "adventure journey quest exploration",
+    "ground_truth": ["Adventure", "Journey", "Quest", "Explorer"]
+  },
+  {
+    "query": "dystopian totalitarian oppression control",
+    "ground_truth": ["Dystopian", "1984", "Oppression", "Control"]
+  },
+  {
+    "query": "historical fiction past era period",
+    "ground_truth": ["History", "Historical", "War", "Era"]
+  },
+  {
+    "query": "young adult coming of age growing",
+    "ground_truth": ["Young Adult", "Growing", "Teenage", "Coming"]
+  },
+  {
+    "query": "literary fiction deep philosophical meaning",
+    "ground_truth": ["Literary", "Philosophical", "Meaning", "Deep"]
+  }
+]
